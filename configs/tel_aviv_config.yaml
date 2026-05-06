@@ -1,0 +1,23 @@
+city: Tel_Aviv
+
+sequence_length: 24
+num_classes: 6
+
+model:
+  d_model: 256
+  nhead: 4
+  num_layers: 3
+  dropout: 0.2
+
+training:
+  batch_size: 16
+  learning_rate: 0.0001
+  epochs: 50
+
+forecast:
+  start_year: 2024
+  end_year: 2026
+
+sustainability:
+  temperature_threshold: 30
+  humidity_threshold: 80
